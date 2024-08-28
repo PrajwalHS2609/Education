@@ -1,0 +1,112 @@
+.aboutUsInstructor {
+  /* border: solid red; */
+  width: 100%;
+  background: linear-gradient(to right, #4561ff, #9d77ff);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUsInstructorHeading {
+  /* border: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.aboutUsInstructorHeading > h6 {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: var(--customLightViolet);
+  color: var(--customViolet);
+}
+.aboutUsInstructorHeading > h2 {
+  font-size: 40px;
+  color: white;
+}
+.aboutUsInstructorContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUsInstructorCard {
+  /* border: solid 10px rgba(255, 255, 255, 0.468); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+.aboutUsInstructorCardCover {
+  background-color: rgba(238, 130, 238, 0.379);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 300ms ease-in-out;
+}
+
+.aboutUsInstructorCard:hover .aboutUsInstructorCardCover {
+  display: flex;
+  transform: translateY(0%);
+}
+.aboutUsInstructorCardImg > img {
+  border: solid 10px rgba(255, 255, 255, 0.468);
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.aboutUsInstructorCardIcon {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUsInstructorCardIcon > i {
+  color: white;
+}
+.aboutUsInstructorCardCover > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .aboutUsInstructorHeading {
+    /* border: solid; */
+    align-items: center;
+  }
+  .aboutUsInstructorHeading > h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  .aboutUsInstructorContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUsInstructorCard {
+    /* border: solid 10px rgba(255, 255, 255, 0.468); */
+    height: 100%;
+    min-width: 300px;
+  }
+}

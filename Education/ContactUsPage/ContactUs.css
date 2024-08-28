@@ -1,0 +1,86 @@
+@import url(./../Global.css);
+.contactHeaderContainer {
+  /* border: solid red; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(to bottom, #ddc1f8, #e6ccff, white);
+}
+.contactHeaderContent1 {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactHeaderContent1 > h6 {
+  border: solid var(--customLightViolet);
+  color: var(--customViolet);
+  padding: 10px;
+  border-radius: 20px;
+}
+.contactHeaderContent1 > h2 {
+  font-size: 40px;
+  width: 40%;
+  text-align: center;
+}
+.contactHeaderContent2 {
+  /* border: solid brown; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactHeaderContentCard {
+  /* border: solid green; */
+  width: 30%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+.contactHeaderCardIcon > i {
+  font-size: 50px;
+}
+.contactHeaderCardHead > h3 {
+  font-size: 25px;
+}
+.contactHeaderCardTxt > h3 {
+  font-size: 20px;
+  color: grey;
+  font-weight: lighter;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contactHeaderContent1 > h2 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .contactHeaderContent2 {
+    /* border: solid brown; */
+    flex-direction: column;
+  }
+  .contactHeaderContentCard {
+    /* border: solid green; */
+    min-width: 300px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,114 @@
+.exploreContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+.exploreContainer > h6 {
+  /* border: solid blue; */
+  padding: 10px;
+  border-radius: 20px;
+  color: blue;
+  background-color: rgb(219, 219, 255);
+}
+.exploreContainer > h2 {
+  width: 50%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.exploreWrapper {
+  /* border: solid brown; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+}
+
+.exploreContent {
+  /* border: solid green; */
+  width: 20%;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+  transition: 300ms ease-in-out;
+  padding: 10px;
+}
+.exploreContent > a {
+  /* border: solid green; */
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.exploreContent:hover {
+  transform: translateY(-10px);
+}
+.exploreContentImg {
+  /* border: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.exploreContentImg > img {
+  width: 100px;
+}
+.exploreContentArrow {
+  /* border: solid red; */
+  border-radius: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 10px grey;
+}
+.exploreContentArrow > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .exploreContainer {
+    /* border: solid red; */
+    gap: 0px;
+    padding: 10px;
+  }
+  .exploreContainer > h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .exploreWrapper {
+    /* border: solid brown; */
+    flex-direction: column;
+  }
+  .exploreContent {
+    /* border: solid green; */
+    min-width: 300px;
+    height: 250px;
+    padding: 0px;
+  }
+}

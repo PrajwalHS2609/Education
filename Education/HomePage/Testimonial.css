@@ -1,0 +1,114 @@
+@import url(./../Global.css);
+.testimonialContainer {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.testimonialContentHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonialContentHead > h6 {
+  padding: 10px;
+  color: var(--customBlue);
+  background-color: var(--customLightBlue);
+  border-radius: 20px;
+}
+.testimonialContentHead > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+/* .testimonialContent {
+  border: solid blue;
+  width: 100%;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+} */
+.testimonialContent {
+  /* border: solid blue; */
+  width: 100%;
+  overflow: hidden; /* Hides the content that scrolls out of the container */
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Ensures the content stays in a single line */
+  padding: 10px;
+}
+
+.scrollingText {
+  display: flex;
+  width: max-content; /* Ensures the container is wide enough for content */
+  animation: scroll-left 20s linear infinite; /* Continuous scrolling effect */
+}
+
+.testimonialItem {
+  /* border: solid green; */
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+  display: inline-block; /* Keeps items inline for horizontal scroll */
+  margin: 0 10px; /* Space between items */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  white-space: wrap;
+}
+.testimonialItem > img {
+  width: 50px;
+  height: 50px;
+}
+.testimonialItem > p {
+  text-align: justify;
+}
+.testimonialItem > h4 {
+  width: 100%;
+  text-align: end;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+#testimonialItem1 {
+  background: linear-gradient(to right, #3859ee, #b668e7);
+  color: white;
+}
+#testimonialItem2 {
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .testimonialContainer {
+    /* border: solid red; */
+    gap: 30px;
+    padding: 10px;
+  }
+  .testimonialContentHead > h2 {
+    font-size: 30px;
+  }
+  .testimonialItem {
+    /* border: solid green; */
+    border-radius: 20px;
+    width:290px;
+    height: 300px;
+  }
+  .scrollingText {
+    display: flex;
+    width: max-content; /* Ensures the container is wide enough for content */
+    animation: scroll-left 50s linear infinite; /* Continuous scrolling effect */
+  }
+}

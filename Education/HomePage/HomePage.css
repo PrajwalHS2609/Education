@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homeContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+#carouselExampleSlidesOnly {
+  height: 100%;
+  /* border: solid red; */
+  width: 100%;
+}
+#carouselItem > img {
+  height: 600px;
+  object-fit: cover;
+}
+.carousel-inner {
+  position: relative;
+}
+.carouselCover {
+  /* border: solid green; */
+  background-color: rgba(0, 0, 0, 0.395);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.carouselCoverContent {
+  /* border: solid yellow; */
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.carouselCoverContent > h2 {
+  font-size: 50px;
+  color: white;
+}
+.carouselCoverContent > p {
+  color: white;
+  font-size: 20px;
+}
+.buttonExplore {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #5b42f3;
+  color: ghostwhite;
+}
+
+.buttonExplore span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.buttonExplore:hover span {
+  color: black;
+}
+
+.buttonExplore::before,
+.buttonExplore::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.buttonExplore::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.buttonExplore:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+#explore,
+#courses,
+#whyChoose,
+#aboutUs,
+#testimonial,
+#footer {
+  width: 100%;
+  /* border: solid blue; */
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .carouselCoverContent {
+    /* border: solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carouselCoverContent > h2 {
+    font-size: 30px;
+    color: white;
+  }
+  #carouselItem > img {
+    height: 600px;
+    object-fit: cover;
+    object-position: -500px;
+  }
+}

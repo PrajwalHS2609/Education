@@ -1,0 +1,72 @@
+.aboutUsWhyContainer {
+  /* border: solid red; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUsWhyHeading {
+  /* border: solid blue; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutUsWhyHeading > h2 {
+  font-size: 40px;
+}
+.aboutUsWhyHeading > p {
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+}
+.aboutUsWhyHeading > p > span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.aboutUsWhyContent {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.aboutUsWhyContentCard {
+  border: 1px solid grey;
+  width: 20%;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  margin: 20px;
+}
+.aboutUsWhyCardIcon {
+  /* border: solid; */
+  font-size: 45px;
+}
+.aboutUsWhyCardHead {
+  font-size: 20px;
+}
+.aboutUsWhyCardPara {
+  font-size: 15px;
+  color: rgb(109, 109, 109);
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .aboutUsWhyContent {
+    /* border: solid blue; */
+    flex-direction: column;
+  }
+  .aboutUsWhyContentCard {
+    border: 1px solid grey;
+    min-width: 300px;
+
+  }
+}
