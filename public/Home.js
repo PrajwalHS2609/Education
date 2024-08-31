@@ -1,6 +1,6 @@
 async function loadNavbar() {
   try {
-    const response = await fetch("./Navbar.html");
+    const response = await fetch("./NavBar.html");
     const data = await response.text();
     document.getElementById("navbar").innerHTML = data;
   } catch (error) {

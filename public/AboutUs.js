@@ -1,6 +1,6 @@
 async function loadNavbar() {
   try {
-    const response = await fetch("../HomePage/NavBar.html");
+    const response = await fetch("./NavBar.html");
     const data = await response.text();
     document.getElementById("navbar").innerHTML = data;
   } catch (error) {
@@ -10,7 +10,7 @@ async function loadNavbar() {
 loadNavbar();
 async function loadAboutUs() {
   try {
-    const response = await fetch("../HomePage/AboutUs.html");
+    const response = await fetch("./AboutUs.html");
     const data = await response.text();
     document.getElementById("aboutus").innerHTML = data;
   } catch (error) {
@@ -21,7 +21,7 @@ async function loadAboutUs() {
 loadAboutUs();
 async function loadTestimonial() {
   try {
-    const response = await fetch("../HomePage/Testimonial.html");
+    const response = await fetch("./Testimonial.html");
     const data = await response.text();
     document.getElementById("testimonial").innerHTML = data;
   } catch (error) {
@@ -56,7 +56,7 @@ async function loadAboutUsInstructor() {
 loadAboutUsInstructor();
 async function loadFooter() {
   try {
-    const response = await fetch("../HomePage/Footer.html");
+    const response = await fetch("./Footer.html");
     const data = await response.text();
     document.getElementById("footer").innerHTML = data;
   } catch (error) {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <link rel="stylesheet" href="./Navbar.css" />
+    <script
+      src="https://kit.fontawesome.com/21ae9c4665.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navContainer">
+      <div class="navLogoContent">
+        <a href="./index.html">
+          <img
+            src="https://rainbowthemes.net/themes/histudy/wp-content/uploads/2024/02/logo.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="navContent">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="./courses-page.html"
+            >Courses <i class="fa-solid fa-angle-down"></i
+          ></a>
+          <div class="navContentDrop"></div>
+        </li>
+        <li><a href="./about-us.html">About</a></li>
+        <li>
+          <a href="./contact-us.html">Contact Us</a>
+        </li>
+      </div>
+      <div class="navContentSearch" id="respnavContentSearch">
+        <input type="text" id="searchInput" placeholder="Search ..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="navContentEnroll" id="respnavContentEnroll">
+        <button class="button-63" role="button">Enroll Now</button>
+      </div>
+      <div class="menuBar" onclick="showSideBar()">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <div class="respMenuContainer">
+        <div class="navContentSearch" id="respNavContentSearch">
+          <input type="text" id="searchInput" placeholder="Search ..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <li>
+          <a onclick="hideSideBar()" href="./index.html">Home</a>
+          <i
+            class="fa-solid fa-x"
+            style="color: white"
+            id="menuX"
+            onclick="hideSideBar()"
+          ></i>
+        </li>
+        <li>
+          <a onclick="hideSideBar()" href="./courses-page.html">Courses</a>
+        </li>
+        <li>
+          <a onclick="hideSideBar()" href="./about-us.html">About Us</a>
+        </li>
+        <li>
+          <a onclick="hideSideBar()" href="./contact-us.html">Contact Us</a>
+        </li>
+
+        <div class="navContentEnroll" id="respNavContentEnroll">
+          <button class="button-63" role="button">Enroll Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <script src="./NavBar.js" defer></script>
+  </body>
+</html>

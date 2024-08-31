@@ -59,7 +59,8 @@
   background-color: #fcf1ee;
 }
 .aboutUsContent2 > p {
-  font-size: 20px;text-align: justify;
+  font-size: 20px;
+  text-align: justify;
 }
 .aboutUsContent2Item {
   /* border: solid; */
@@ -161,27 +162,13 @@
     padding: 0px;
   }
   .aboutUsItem2 {
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 1px;
-    /* border: solid red; */
-    width: 100%;
+    display: none;
   }
-  .aboutUsItem2 > img {
-    margin-left: 200px;
-    width: 100px;
-  }
+
   .aboutUsItem3 {
-    /* border: solid green; */
-    margin-top: -100px;
-    margin-left: 10px;
-    width: 80%;
+    display: none;
   }
-  .aboutUsItem3 > img {
-    margin-left: 0px;
-    width: 100%;
-  }
+
   .aboutUsItem1 {
     /* border: solid green; */
     margin-top: 0px;
